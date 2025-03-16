@@ -76,7 +76,7 @@ IMGS_TO_MODE_DICT = {
 
 """Dictionary mapping tuples of booleans representing presence of the modality in order [T1C, FLAIR, T1, T2] to InferenceMode values."""
 
-ZENODO_RECORD_URL = "https://zenodo.org/api/records/TODO"
+ZENODO_RECORD_URL = "https://zenodo.org/api/records/14989866"
 WEIGHTS_FOLDER = Path(__file__).parent / "weights"
 WEIGHTS_DIR_PATTERN = "weights_v*.*.*"
 """Directory name pattern to store model weights. E.g. weights_v1.0.0"""
