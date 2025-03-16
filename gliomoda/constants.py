@@ -8,7 +8,7 @@ class InferenceMode(str, Enum):
     In general, you should aim to use as many modalities as possible to get the best results.
     """
 
-    T1C_T2F_T1N_T2W = "t1c_t2f_t1n_t2w"
+    T1C_T2F_T1N_T2W = "t1c-t2f-t1n-t2w"
     """T1C, T2F, T1N, and T2W are available."""
 
     T1C = "t1c"
@@ -23,25 +23,25 @@ class InferenceMode(str, Enum):
     T2W = "t2w"
     """T2W is available."""
 
-    T1C_T2F = "t1c_t2f"
+    T1C_T2F = "t1c-t2f"
     """T1C and T2F are available."""
 
-    T1C_T1N = "t1c_t1n"
+    T1C_T1N = "t1c-t1n"
     """T1C and T1N are available."""
 
-    T1C_T1N_T2W = "t1c_t1n_t2w"
+    T1C_T1N_T2W = "t1c-t1n-t2w"
     """T1C, T1N, and T2W are available."""
 
-    T1C_T2W = "t1c_t2w"
+    T1C_T2W = "t1c-t2w"
     """T1C and T2W are available."""
 
-    T2F_T1N = "t2f_t1n"
+    T2F_T1N = "t2f-t1n"
     """T2F and T1N are available."""
 
-    T2F_T1N_T2W = "t2f_t1n_t2w"
+    T2F_T1N_T2W = "t2f-t1n-t2w"
     """T2F, T1N, and T2W are available."""
 
-    T2F_T2W = "t2f_t2w"
+    T2F_T2W = "t2f-t2w"
     """T2F and T2W are available."""
 
 
