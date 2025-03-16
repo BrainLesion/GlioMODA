@@ -16,7 +16,7 @@ run(["python", "preprocess_readme.py"])
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "PACKAGE_NAME"
+project = "GlioMODA"
 copyright = "2024, Marcel Rosier et al."
 author = "Marcel Rosier, Florian Kofler"
 

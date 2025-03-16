@@ -1,4 +1,4 @@
-PACKAGE_NAME documentation
+GlioMODA documentation
 ===================
 
 .. include:: ../README_preprocessed.md

@@ -6,7 +6,7 @@ build-backend = "poetry_dynamic_versioning.backend"
 enable = true
 
 [tool.poetry]
-name = "package_name"
+name = "gliomoda"
 version = "0.0.0.dev"
 description = ""
 authors = ["Marcel Rosier <marcel.rosier@tum.de>"]

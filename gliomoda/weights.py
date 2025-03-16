@@ -11,7 +11,7 @@ import requests
 from loguru import logger
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-from package_name.constants import (
+from gliomoda.constants import (
     WEIGHTS_DIR_PATTERN,
     WEIGHTS_FOLDER,
     ZENODO_RECORD_URL,

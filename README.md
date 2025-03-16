@@ -1,10 +1,10 @@
-# PACKAGE_NAME
+# GlioMODA
 
-[![Python Versions](https://img.shields.io/pypi/pyversions/PACKAGE_NAME)](https://pypi.org/project/PACKAGE_NAME/)
-[![Stable Version](https://img.shields.io/pypi/v/PACKAGE_NAME?label=stable)](https://pypi.python.org/pypi/PACKAGE_NAME/)
-[![Documentation Status](https://readthedocs.org/projects/PACKAGE_NAME/badge/?version=latest)](http://PACKAGE_NAME.readthedocs.io/?badge=latest)
-[![tests](https://github.com/BrainLesion/PACKAGE_NAME/actions/workflows/tests.yml/badge.svg)](https://github.com/BrainLesion/PACKAGE_NAME/actions/workflows/tests.yml)
-[![codecov](https://codecov.io/gh/BrainLesion/PACKAGE_NAME/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/PACKAGE_NAME)
+[![Python Versions](https://img.shields.io/pypi/pyversions/GlioMODA)](https://pypi.org/project/GlioMODA/)
+[![Stable Version](https://img.shields.io/pypi/v/GlioMODA?label=stable)](https://pypi.python.org/pypi/GlioMODA/)
+[![Documentation Status](https://readthedocs.org/projects/GlioMODA/badge/?version=latest)](http://GlioMODA.readthedocs.io/?badge=latest)
+[![tests](https://github.com/BrainLesion/GlioMODA/actions/workflows/tests.yml/badge.svg)](https://github.com/BrainLesion/GlioMODA/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/BrainLesion/GlioMODA/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/GlioMODA)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Description 
@@ -13,10 +13,10 @@ Description
 
 ## Installation
 
-With a Python 3.8+ environment, you can install `PACKAGE_NAME` directly from [PyPI](https://pypi.org/project/PACKAGE_NAME/):
+With a Python 3.8+ environment, you can install `GlioMODA` directly from [PyPI](https://pypi.org/project/GlioMODA/):
 
 ```bash
-pip install PACKAGE_NAME
+pip install gliomoda
 ```
 
 
@@ -28,12 +28,12 @@ A minimal example to create a segmentation could look like this:
     # example
 ```
 
-<!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/PACKAGE_NAME/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/PACKAGE_NAME/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
+<!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
 
 
 ## Citation
 
-If you use PACKAGE_NAME in your research, please cite it to support the development!
+If you use GlioMODA in your research, please cite it to support the development!
 
 ```
 TODO: citation will be added asap
@@ -45,7 +45,7 @@ We welcome all kinds of contributions from the community!
 
 ### Reporting Bugs, Feature Requests and Questions
 
-Please open a new issue [here](https://github.com/BrainLesion/PACKAGE_NAME/issues).
+Please open a new issue [here](https://github.com/BrainLesion/GlioMODA/issues).
 
 ### Code contributions
 

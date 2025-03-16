@@ -8,7 +8,7 @@ import nibabel as nib
 import numpy as np
 from loguru import logger
 
-from package_name.constants import (
+from gliomoda.constants import (
     ATLAS_SPACE_SHAPE,
     IMGS_TO_MODE_DICT,
     DataMode,

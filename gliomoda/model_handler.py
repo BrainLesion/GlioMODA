@@ -11,8 +11,8 @@ import torch
 from loguru import logger
 from nnunetv2.inference.predict_from_raw_data import nnUNetPredictor
 
-from package_name.constants import InferenceMode
-from package_name.weights import check_weights_path
+from gliomoda.constants import InferenceMode
+from gliomoda.weights import check_weights_path
 
 
 class ModelHandler:

@@ -1,5 +1,5 @@
 import os
-from package_name.constants import NNUNET_ENV_VARS
+from gliomoda.constants import NNUNET_ENV_VARS
 
 # suppress nnUNet warnings by setting vars to dummy values (if not already set)
 for env_var in NNUNET_ENV_VARS:
@@ -7,4 +7,4 @@ for env_var in NNUNET_ENV_VARS:
         os.environ[env_var] = ""
 
 
-from package_name.inferer import Inferer
+from gliomoda.inferer import Inferer

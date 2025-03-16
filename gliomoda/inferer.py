@@ -9,8 +9,8 @@ import numpy as np
 import torch
 from loguru import logger
 
-from package_name.data_handler import DataHandler
-from package_name.model_handler import ModelHandler
+from gliomoda.data_handler import DataHandler
+from gliomoda.model_handler import ModelHandler
 
 
 class Inferer:
