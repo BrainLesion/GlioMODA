@@ -39,7 +39,7 @@ jobs:
           poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          poetry run pytest --cov=package_name --cov-report=xml --cov-report=term
+          poetry run pytest --cov=gliomoda --cov-report=xml --cov-report=term
       # Add the following block to upload coverage to Codecov, requires a CODECOV_TOKEN secret to be set in the repository
       # - name: Upload results to Codecov
       #   # Only upload to Codecov after a merge to the main branch

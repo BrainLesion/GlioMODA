@@ -1,4 +1,4 @@
-PACKAGE_NAME documentation
+GlioMODA documentation
 ===================
 
 .. include:: ../README_preprocessed.md
@@ -20,3 +20,5 @@ Sections
    :maxdepth: 2
    :caption: API Reference:
 
+   inferer
+   constants

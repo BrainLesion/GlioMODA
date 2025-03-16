@@ -1,22 +1,21 @@
-# PACKAGE_NAME
+# GlioMODA
 
-[![Python Versions](https://img.shields.io/pypi/pyversions/PACKAGE_NAME)](https://pypi.org/project/PACKAGE_NAME/)
-[![Stable Version](https://img.shields.io/pypi/v/PACKAGE_NAME?label=stable)](https://pypi.python.org/pypi/PACKAGE_NAME/)
-[![Documentation Status](https://readthedocs.org/projects/PACKAGE_NAME/badge/?version=latest)](http://PACKAGE_NAME.readthedocs.io/?badge=latest)
-[![tests](https://github.com/BrainLesion/PACKAGE_NAME/actions/workflows/tests.yml/badge.svg)](https://github.com/BrainLesion/PACKAGE_NAME/actions/workflows/tests.yml)
-[![codecov](https://codecov.io/gh/BrainLesion/PACKAGE_NAME/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/PACKAGE_NAME)
+[![Python Versions](https://img.shields.io/pypi/pyversions/GlioMODA)](https://pypi.org/project/GlioMODA/)
+[![Stable Version](https://img.shields.io/pypi/v/GlioMODA?label=stable)](https://pypi.python.org/pypi/GlioMODA/)
+[![Documentation Status](https://readthedocs.org/projects/GlioMODA/badge/?version=latest)](http://GlioMODA.readthedocs.io/?badge=latest)
+[![tests](https://github.com/BrainLesion/GlioMODA/actions/workflows/tests.yml/badge.svg)](https://github.com/BrainLesion/GlioMODA/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/BrainLesion/GlioMODA/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/GlioMODA)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Description 
 ## Features
 
 
 ## Installation
 
-With a Python 3.8+ environment, you can install `PACKAGE_NAME` directly from [PyPI](https://pypi.org/project/PACKAGE_NAME/):
+With a Python 3.10+ environment, you can install `gliomoda` directly from [PyPI](https://pypi.org/project/gliomoda/):
 
 ```bash
-pip install PACKAGE_NAME
+pip install gliomoda
 ```
 
 
@@ -25,19 +24,80 @@ pip install PACKAGE_NAME
 A minimal example to create a segmentation could look like this:
 
 ```python
-    # example
+from gliomoda import Inferer
+
+inferer = Inferer()
+
+# Save NIfTI files
+inferer.infer(
+    t1c="path/to/t1c.nii.gz",
+    fla="path/to/fla.nii.gz",
+    t1="path/to/t1.nii.gz",
+    t2="path/to/t2.nii.gz",
+    segmentation_file="example/seg.nii.gz",
+)
+
+# Or directly use NumPy data. (Both works as well)
+segmentation_np = inferer.infer(
+    t1c="path/to/t1c.nii.gz",
+    fla="path/to/fla.nii.gz",
+    t1="path/to/t1.nii.gz",
+    t2="path/to/t2.nii.gz",◊
+)
 ```
 
-<!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/PACKAGE_NAME/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/PACKAGE_NAME/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
+<!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
 
 
 ## Citation
 
-If you use PACKAGE_NAME in your research, please cite it to support the development!
+If you use GlioMODA in your research, please cite it to support the development!
 
 ```
 TODO: citation will be added asap
 ```
+
+## Trouble shoot
+
+<details>
+<summary>
+Multiprocessing error
+</summary>
+
+If you get an error related to something like this:
+<br>
+
+```
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+```
+
+Please ensure you properly wrap your script:
+
+```python
+if __name__ == "__main__":
+    inferer = Inferer()
+    ...
+```
+
+</details>
+
+
 
 ## Contributing
 
@@ -45,7 +105,7 @@ We welcome all kinds of contributions from the community!
 
 ### Reporting Bugs, Feature Requests and Questions
 
-Please open a new issue [here](https://github.com/BrainLesion/PACKAGE_NAME/issues).
+Please open a new issue [here](https://github.com/BrainLesion/GlioMODA/issues).
 
 ### Code contributions
 

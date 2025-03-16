@@ -6,7 +6,7 @@ build-backend = "poetry_dynamic_versioning.backend"
 enable = true
 
 [tool.poetry]
-name = "package_name"
+name = "gliomoda"
 version = "0.0.0.dev"
 description = ""
 authors = ["Marcel Rosier <marcel.rosier@tum.de>"]
@@ -20,8 +20,14 @@ readme = "README.md"
 exclude = ["examples", "benchmark"]
 
 [tool.poetry.dependencies]
-python = ">=3.10"
-
+python = "^3.10"
+numpy = "^2.2.2"
+nibabel = "^5.3.2"
+loguru = "^0.7.3"
+torch = "^2.6.0"
+nnunetv2 = "2.5.2"
+rich = "^13.9.4"
+blosc2 = "^2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.0.0"
