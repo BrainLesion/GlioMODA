@@ -7,13 +7,12 @@
 [![codecov](https://codecov.io/gh/BrainLesion/GlioMODA/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/GlioMODA)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Description 
 ## Features
 
 
 ## Installation
 
-With a Python 3.8+ environment, you can install `GlioMODA` directly from [PyPI](https://pypi.org/project/GlioMODA/):
+With a Python 3.10+ environment, you can install `gliomoda` directly from [PyPI](https://pypi.org/project/gliomoda/):
 
 ```bash
 pip install gliomoda
@@ -25,7 +24,26 @@ pip install gliomoda
 A minimal example to create a segmentation could look like this:
 
 ```python
-    # example
+from gliomoda import Inferer
+
+inferer = Inferer()
+
+# Save NIfTI files
+inferer.infer(
+    t1c="path/to/t1c.nii.gz",
+    fla="path/to/fla.nii.gz",
+    t1="path/to/t1.nii.gz",
+    t2="path/to/t2.nii.gz",
+    segmentation_file="example/seg.nii.gz",
+)
+
+# Or directly use NumPy data. (Both works as well)
+segmentation_np = inferer.infer(
+    t1c="path/to/t1c.nii.gz",
+    fla="path/to/fla.nii.gz",
+    t1="path/to/t1.nii.gz",
+    t2="path/to/t2.nii.gz",◊
+)
 ```
 
 <!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
