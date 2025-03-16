@@ -57,6 +57,48 @@ If you use GlioMODA in your research, please cite it to support the development!
 TODO: citation will be added asap
 ```
 
+## Trouble shoot
+
+<details>
+<summary>
+Multiprocessing error
+</summary>
+
+If you get an error related to something like this:
+<br>
+
+```
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+```
+
+Please ensure you properly wrap your script:
+
+```python
+if __name__ == "__main__":
+    inferer = Inferer()
+    ...
+```
+
+</details>
+
+
+
 ## Contributing
 
 We welcome all kinds of contributions from the community!
