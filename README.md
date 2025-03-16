@@ -42,7 +42,7 @@ segmentation_np = inferer.infer(
     t1c="path/to/t1c.nii.gz",
     fla="path/to/fla.nii.gz",
     t1="path/to/t1.nii.gz",
-    t2="path/to/t2.nii.gz",◊
+    t2="path/to/t2.nii.gz",
 )
 ```
 
