@@ -31,18 +31,18 @@ inferer = Inferer()
 # Save NIfTI files
 inferer.infer(
     t1c="path/to/t1c.nii.gz",
-    fla="path/to/fla.nii.gz",
-    t1="path/to/t1.nii.gz",
-    t2="path/to/t2.nii.gz",
-    segmentation_file="example/seg.nii.gz",
+    t2f="path/to/t2f.nii.gz",
+    t1n="path/to/t1n.nii.gz",
+    t2w="path/to/t2w.nii.gz",
+    segmentation_file="path/to/segmentation.nii.gz",
 )
 
-# Or directly use NumPy data. (Both works as well)
+# Or directly use pre-loaded NumPy data. (Both works as well)
 segmentation_np = inferer.infer(
-    t1c="path/to/t1c.nii.gz",
-    fla="path/to/fla.nii.gz",
-    t1="path/to/t1.nii.gz",
-    t2="path/to/t2.nii.gz",
+    t1c=t1c_np,
+    t2f=t2f_np,
+    t1n=t1n_np,
+    t2w=t2w_np,
 )
 ```
 
