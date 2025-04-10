@@ -60,16 +60,11 @@ e.g. Conda environment with Python 3.10. Check your Python version with:
 python --version
 ```
 
-### Docker version
-please specify your docker version, You can find it by running: 
-```sh
-docker --version
-```
 
-### Version of brats ?
-please specify your version of brats (please make sure you run the latest version):
+### Version of GlioMODA ?
+please specify your version of GlioMODA (please make sure you run the latest version):
 ```sh
-pip freeze | grep brats
+pip freeze | grep gliomoda
 ```
 
 **Additional context**
