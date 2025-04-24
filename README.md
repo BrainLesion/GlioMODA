@@ -45,6 +45,8 @@ segmentation_np = inferer.infer(
     t2w=t2w_np,
 )
 ```
+> [!NOTE] 
+>If you're interested in the GlioMODA package, the [BraTS Adult Glioma Segmentation](https://github.com/BrainLesion/BraTS?tab=readme-ov-file#adult-glioma-segmentation-pre-treatment) may also be of interest.
 
 <!-- For more examples and details please refer to our extensive Notebook tutorials here [NBViewer](https://nbviewer.org/github/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb) ([GitHub](https://github.com/BrainLesion/tutorials/blob/main/GlioMODA/tutorial.ipynb)). For the best experience open the notebook in Colab. -->
 
