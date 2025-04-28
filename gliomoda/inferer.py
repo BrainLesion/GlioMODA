@@ -67,6 +67,7 @@ class Inferer:
         t1n: Optional[str | Path | np.ndarray] = None,
         t2w: Optional[str | Path | np.ndarray] = None,
         segmentation_file: Optional[str | Path] = None,
+        use_ResEncL: bool = False,
     ) -> np.ndarray:
         """Infer segmentations based on provided images.
 
@@ -76,6 +77,7 @@ class Inferer:
             t1n (Optional[str  |  Path  |  np.ndarray], optional): T1N image. Defaults to None.
             t2w (Optional[str  |  Path  |  np.ndarray], optional): T2W image. Defaults to None.
             segmentation_file (Optional[str  |  Path], optional): Segmentation file. Defaults to None.
+            use_ResEncL (bool, optional): Use ResEncL model (only available when providing all 4 modalities). Defaults to False.
 
         Returns:
             np.ndarray: Inferred segmentation.
@@ -94,6 +96,7 @@ class Inferer:
 
         self.model_handler.load_model(
             inference_mode=determined_inference_mode,
+            use_ResEncL=use_ResEncL,
         )
 
         with tempfile.TemporaryDirectory() as tmpdir:
