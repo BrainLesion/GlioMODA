@@ -28,7 +28,7 @@ def test_load_model(mock_predictor_class, mock_model_handler):
     mock_predictor_class.return_value = mock_predictor
 
     inference_mode = InferenceMode.T1N
-    mock_model_handler.load_model(inference_mode)
+    mock_model_handler.load_model(inference_mode, use_ResEncL=False)
 
     assert mock_model_handler.predictor is not None
     # mock_predictor.initialize_from_trained_model_folder
@@ -36,6 +36,52 @@ def test_load_model(mock_predictor_class, mock_model_handler):
         Path("/mocked/path/to/weights") / inference_mode.value,
         use_folds=("all"),
     )
+
+
+@patch("gliomoda.model_handler.logger.warning")
+@patch("gliomoda.model_handler.nnUNetPredictor")
+def test_load_model_useResEncL_invalid(
+    mock_predictor_class, mock_logger_warning, mock_model_handler
+):
+    """Test if load_model correctly initializes the nnUNetPredictor."""
+    mock_predictor = MagicMock()
+    mock_predictor_class.return_value = mock_predictor
+
+    inference_mode = InferenceMode.T1N
+    mock_model_handler.load_model(inference_mode, use_ResEncL=True)
+
+    assert mock_model_handler.predictor is not None
+    # mock_predictor.initialize_from_trained_model_folder
+    mock_predictor.initialize_from_trained_model_folder.assert_called_once_with(
+        Path("/mocked/path/to/weights") / inference_mode.value,
+        use_folds=("all"),
+    )
+
+    mock_logger_warning.assert_called_once_with(
+        "ResEncL model is only available when providing all 4 modalities. Using default model instead."
+    )
+
+
+@patch("gliomoda.model_handler.logger.warning")
+@patch("gliomoda.model_handler.nnUNetPredictor")
+def test_load_model_useResEncL_valid(
+    mock_predictor_class, mock_logger_warning, mock_model_handler
+):
+    """Test if load_model correctly initializes the nnUNetPredictor."""
+    mock_predictor = MagicMock()
+    mock_predictor_class.return_value = mock_predictor
+
+    inference_mode = InferenceMode.T1C_T2F_T1N_T2W
+    mock_model_handler.load_model(inference_mode, use_ResEncL=True)
+
+    assert mock_model_handler.predictor is not None
+    # mock_predictor.initialize_from_trained_model_folder
+    mock_predictor.initialize_from_trained_model_folder.assert_called_once_with(
+        Path("/mocked/path/to/weights") / f"{inference_mode.value}_ResEncL",
+        use_folds=("all"),
+    )
+
+    mock_logger_warning.assert_not_called()
 
 
 @patch("gliomoda.model_handler.nib.load")
