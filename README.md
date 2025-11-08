@@ -22,7 +22,7 @@ pip install gliomoda
 ## Data Requirements
 
 GlioMODA is trained on [BraTS](https://github.com/BraTS) (Brain Tumor Segmentation) preprocessed images.
-This preprocessing typically includes co-registration to the T1C, skull stripping (brain extraction), and registration to the SRI-24 brain atlas (template).
+This preprocessing typically includes co-registration to the T1c, skull stripping (brain extraction), and registration to the SRI-24 brain atlas (template).
 
 We recommend using the [preprocessing package](https://github.com/BrainLesion/preprocessing), part of the [BrainLesion Suite](https://github.com/BrainLesion), to design custom preprocessing pipelines tailored to your specific needs.
 You can install the package with:
