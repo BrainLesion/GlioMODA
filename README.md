@@ -31,7 +31,7 @@ You can install the package with:
 pip install brainles-preprocessing
 ```
 
-Alternatively, if you have the full set of MRI modalities (T1, T1c, T2, FLAIR), you can use glioma-specific preprocessing functions from the [BraTS Orchestrator](https://github.com/BrainLesion/BraTS).
+Alternatively, if you have the full set of MRI modalities (T1, T1c, T2, T2-FLAIR), you can use glioma-specific preprocessing functions from the [BraTS Orchestrator](https://github.com/BrainLesion/BraTS).
 Install with:
 
 ```bash
