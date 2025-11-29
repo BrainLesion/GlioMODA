@@ -64,7 +64,6 @@ segmentation_np = inferer.infer(
 > [!IMPORTANT]
 > If you use GlioMODA in your research, please cite it to support the development!
 
-<!-- Kofler, F., Rosier, M., Astaraki, M., Möller, H., Mekki, I. I., Buchner, J. A., Schmick, A., Pfiffer, A., Oswald, E., Zimmer, L., Rosa, E. de la, Pati, S., Canisius, J., Piffer, A., Baid, U., Valizadeh, M., Linardos, A., Peeken, J. C., Shit, S., … Menze, B. (2025). *BrainLesion Suite: A Flexible and User-Friendly Framework for Modular Brain Lesion Image Analysis* [arXiv preprint arXiv:2507.09036](https://doi.org/10.48550/arXiv.2507.09036) -->
 Canisius, J., Buchner, J., Rosier, M., Griessmair, M., Peeken, J., Kirschke, J. S., Piraud, M., Bakas, S., Menze, B., Wiestler, B., & Kofler, F. (2025). GlioMODA: Robust Glioma Segmentation in Clinical Routine (p. 2025.11.12.25339968). medRxiv. https://doi.org/10.1101/2025.11.12.25339968
 
 ```
