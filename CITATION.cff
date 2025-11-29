@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this preprint or the GlioMODA package, please cite the following preprint."
+title: "GlioMODA: Robust Glioma Segmentation in Clinical Routine"
+authors:
+  - family: Canisius
+    given: Julian
+  - family: Buchner
+    given: Josef
+  - family: Rosier
+    given: Marcel
+  - family: Griessmair
+    given: Michael
+  - family: Peeken
+    given: Jan
+  - family: Kirschke
+    given: "Jan S."
+  - family: Piraud
+    given: Marie
+  - family: Bakas
+    given: Spyridon
+  - family: Menze
+    given: Bjoern
+  - family: Wiestler
+    given: Benedikt
+  - family: Kofler
+    given: Florian
+doi: "10.1101/2025.11.12.25339968"
+url: "https://www.medrxiv.org/content/10.1101/2025.11.12.25339968v1"
+publisher: medRxiv
+date-published: 2025-11-12
+license: "CC-BY-NC-4.0"
+keywords:
+  - glioma
+  - segmentation
+  - MRI
+  - deep learning
+  - GlioMODA
+  - volumetry
+  - RANO
+repository: "https://github.com/BrainLesion/GlioMODA"

@@ -62,11 +62,14 @@ segmentation_np = inferer.infer(
 
 
 ## Citation
+> [!IMPORTANT]
+> If you use GlioMODA in your research, please cite it to support the development!
 
-If you use GlioMODA in your research, please cite it to support the development!
+<!-- Kofler, F., Rosier, M., Astaraki, M., Möller, H., Mekki, I. I., Buchner, J. A., Schmick, A., Pfiffer, A., Oswald, E., Zimmer, L., Rosa, E. de la, Pati, S., Canisius, J., Piffer, A., Baid, U., Valizadeh, M., Linardos, A., Peeken, J. C., Shit, S., … Menze, B. (2025). *BrainLesion Suite: A Flexible and User-Friendly Framework for Modular Brain Lesion Image Analysis* [arXiv preprint arXiv:2507.09036](https://doi.org/10.48550/arXiv.2507.09036) -->
+Canisius, J., Buchner, J., Rosier, M., Griessmair, M., Peeken, J., Kirschke, J. S., Piraud, M., Bakas, S., Menze, B., Wiestler, B., & Kofler, F. (2025). GlioMODA: Robust Glioma Segmentation in Clinical Routine (p. 2025.11.12.25339968). medRxiv. https://doi.org/10.1101/2025.11.12.25339968
 
 ```
-TODO: citation will be added asap
+ @article{Canisius_Buchner_Rosier_Griessmair_Peeken_Kirschke_Piraud_Bakas_Menze_Wiestler_et al._2025, title={GlioMODA: Robust Glioma Segmentation in Clinical Routine}, rights={© 2025, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/}, ISSN={3067-2007}, url={https://www.medrxiv.org/content/10.1101/2025.11.12.25339968v1}, DOI={10.1101/2025.11.12.25339968},publisher={medRxiv}, author={Canisius, Julian and Buchner, Josef and Rosier, Marcel and Griessmair, Michael and Peeken, Jan and Kirschke, Jan S. and Piraud, Marie and Bakas, Spyridon and Menze, Bjoern and Wiestler, Benedikt and Kofler, Florian}, year={2025}, month=nov, pages={2025.11.12.25339968}, language={en} }
 ```
 
 ## Trouble shoot
