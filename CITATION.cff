@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this preprint or the GlioMODA package, please cite the following preprint."
+title: "GlioMODA: Robust Glioma Segmentation in Clinical Routine"
+authors:
+  - family-names: Canisius
+    given-names: Julian
+  - family-names: Buchner
+    given-names: Josef
+  - family-names: Rosier
+    given-names: Marcel
+  - family-names: Griessmair
+    given-names: Michael
+  - family-names: Peeken
+    given-names: Jan
+  - family-names: Kirschke
+    given-names: "Jan S."
+  - family-names: Piraud
+    given-names: Marie
+  - family-names: Bakas
+    given-names: Spyridon
+  - family-names: Menze
+    given-names: Bjoern
+  - family-names: Wiestler
+    given-names: Benedikt
+  - family-names: Kofler
+    given-names: Florian
+date-released: 2025-11-12
+doi: "10.1101/2025.11.12.25339968"
+publisher: medRxiv
+url: "https://www.medrxiv.org/content/10.1101/2025.11.12.25339968v1"

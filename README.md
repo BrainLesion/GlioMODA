@@ -7,8 +7,7 @@
 [![codecov](https://codecov.io/gh/BrainLesion/GlioMODA/graph/badge.svg?token=A7FWUKO9Y4)](https://codecov.io/gh/BrainLesion/GlioMODA)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Features
-
+<!-- ## Features -->
 
 ## Installation
 
@@ -62,12 +61,18 @@ segmentation_np = inferer.infer(
 
 
 ## Citation
+> [!IMPORTANT]
+> This package is part of the [BrainLesion Suite](https://github.com/BrainLesion).   
+> If you use GlioMODA in your research, please cite both the GlioMODA paper and the [BrainLesion Suite manuscript](https://github.com/BrainLesion#-citing-brainlesion-suite) to support the development.
 
-If you use GlioMODA in your research, please cite it to support the development!
+Canisius, J., Buchner, J., Rosier, M., Griessmair, M., Peeken, J., Kirschke, J. S., Piraud, M., Bakas, S., Menze, B., Wiestler, B., & Kofler, F. (2025). GlioMODA: Robust Glioma Segmentation in Clinical Routine (p. 2025.11.12.25339968). medRxiv. https://doi.org/10.1101/2025.11.12.25339968
 
 ```
-TODO: citation will be added asap
+ @article{Canisius_et_al_2025, title={GlioMODA: Robust Glioma Segmentation in Clinical Routine}, rights={© 2025, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/}, ISSN={3067-2007}, url={https://www.medrxiv.org/content/10.1101/2025.11.12.25339968v1}, DOI={10.1101/2025.11.12.25339968}, publisher={medRxiv}, author={Canisius, Julian and Buchner, Josef and Rosier, Marcel and Griessmair, Michael and Peeken, Jan and Kirschke, Jan S. and Piraud, Marie and Bakas, Spyridon and Menze, Bjoern and Wiestler, Benedikt and Kofler, Florian}, year={2025}, month=nov, pages={2025.11.12.25339968}, language={en} }
 ```
+
+
+
 
 ## Trouble shoot
 
